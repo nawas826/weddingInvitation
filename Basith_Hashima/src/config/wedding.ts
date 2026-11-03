@@ -17,6 +17,8 @@ export interface WeddingConfig {
   /** WhatsApp number in international format, digits only (e.g. "919876543210"). Leave empty until provided. */
   whatsappNumber: string;
   defaultGuest: string;
+  /** Background music: place your audio file at public/music/wedding.mp3 (MP3/WAV/OGG) or change src below. */
+  music: { src: string; volume: number };
 }
 
 export const wedding: WeddingConfig = {
@@ -51,6 +53,7 @@ export const wedding: WeddingConfig = {
   },
   whatsappNumber: "",
   defaultGuest: "Family & Friends",
+  music: { src: "music/wedding.mp3", volume: 0.55 },
 };
 
 export function rsvpMessage(attending: boolean, guest?: string) {

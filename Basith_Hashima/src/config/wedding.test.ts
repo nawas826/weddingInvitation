@@ -15,6 +15,11 @@ describe("wedding rules", () => {
   it("no WhatsApp link without a number", () => {
     expect(whatsappLink(true)).toBeNull();
   });
+  it("music file and volume are configured", () => {
+    expect(wedding.music.src).toBe("music/wedding.mp3");
+    expect(wedding.music.volume).toBeGreaterThan(0);
+    expect(wedding.music.volume).toBeLessThanOrEqual(1);
+  });
   it("calendar starts at 05:30 UTC", () => {
     expect(buildICS()).toContain("DTSTART:20261121T053000Z");
   });

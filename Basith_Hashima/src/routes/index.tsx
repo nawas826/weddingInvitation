@@ -4,6 +4,7 @@ import { lazy, Suspense, useEffect, useState } from "react";
 import { wedding } from "@/config/wedding";
 import { InvitationEnvelope } from "@/components/invitation/InvitationEnvelope";
 import { MusicToggle } from "@/components/invitation/MusicToggle";
+import { useWeddingMusic } from "@/hooks/useWeddingMusic";
 import { ClosingSection, CoupleDetails, GuestGreeting, HeroSection, RSVPSection, VenueSection, WeddingDate } from "@/components/invitation/Sections";
 
 const FloatingDecorations = lazy(() => import("@/components/invitation/FloatingDecorations"));
@@ -28,6 +29,7 @@ function Invitation() {
   const { guest } = Route.useSearch();
   const guestName = guest?.trim() || wedding.defaultGuest;
   const [opened, setOpened] = useState(false);
+  const music = useWeddingMusic();
   const [lowPower, setLowPower] = useState(false);
   useEffect(() => {
     setLowPower(window.matchMedia("(prefers-reduced-motion: reduce)").matches);
@@ -44,7 +46,9 @@ function Invitation() {
           <FloatingDecorations petals={opened} />
         </Suspense>
       )}
-      <AnimatePresence>{!opened && <InvitationEnvelope key="env" onOpened={() => setOpened(true)} />}</AnimatePresence>
+      <AnimatePresence>
+        {!opened && <InvitationEnvelope key="env" onOpened={() => { setOpened(true); music.start(); }} />}
+      </AnimatePresence>
       {opened && (
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1.2 }}>
           <GuestGreeting guest={guestName} />
@@ -54,7 +58,7 @@ function Invitation() {
           <VenueSection />
           <RSVPSection guest={guestName} />
           <ClosingSection />
-          <MusicToggle />
+          <MusicToggle playing={music.playing} onToggle={music.toggle} />
         </motion.div>
       )}
     </main>
