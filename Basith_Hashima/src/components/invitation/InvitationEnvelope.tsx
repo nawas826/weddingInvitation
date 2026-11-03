@@ -103,7 +103,7 @@ export function InvitationEnvelope({ onOpened }: { onOpened: () => void }) {
           >
             <div className="absolute inset-2 rounded-sm border border-gold/70" />
             <div className="absolute inset-3 rounded-sm border border-gold/30" />
-            <p className="font-display text-[0.55rem] tracking-[0.3em] text-emerald uppercase">The wedding of</p>
+            <p className="font-display text-[0.55rem] tracking-[0.3em] text-emerald uppercase">The nikkah of</p>
             <p className="mt-1 font-script text-3xl leading-tight text-emerald-deep sm:text-4xl">{c.groom}</p>
             <p className="font-script text-2xl text-gold">&</p>
             <p className="font-script text-3xl leading-tight text-emerald-deep sm:text-4xl">{c.bride}</p>

@@ -60,8 +60,8 @@ export function rsvpMessage(attending: boolean, guest?: string) {
   const c = wedding.coupleShort;
   const from = guest && guest !== wedding.defaultGuest ? ` This is ${guest}.` : "";
   return attending
-    ? `Assalamu Alaikum!${from} I am happy to confirm my attendance at the wedding of ${c.groom} and ${c.bride} on ${wedding.dateParts.long} at ${wedding.dateParts.time}.`
-    : `Assalamu Alaikum!${from} Thank you for inviting me. Unfortunately, I won't be able to attend the wedding of ${c.groom} and ${c.bride}. My heartfelt wishes and prayers are with the couple.`;
+    ? `Assalamu Alaikum!${from} I am happy to confirm my attendance at the nikkah of ${c.groom} and ${c.bride} on ${wedding.dateParts.long} at ${wedding.dateParts.time}.`
+    : `Assalamu Alaikum!${from} Thank you for inviting me. Unfortunately, I won't be able to attend the nikkah of ${c.groom} and ${c.bride}. My heartfelt wishes and prayers are with the couple.`;
 }
 
 export function whatsappLink(attending: boolean, guest?: string): string | null {
@@ -95,7 +95,7 @@ export function buildICS(): string {
     `DTSTAMP:${f(new Date())}`,
     `DTSTART:${f(start)}`,
     `DTEND:${f(end)}`,
-    `SUMMARY:Wedding of ${c.groom} & ${c.bride}`,
+    `SUMMARY:Nikkah of ${c.groom} & ${c.bride}`,
     `LOCATION:${wedding.venue.name}\\, ${wedding.venue.place}`,
     `DESCRIPTION:Location: ${wedding.venue.mapsUrl}`,
     "END:VEVENT",
