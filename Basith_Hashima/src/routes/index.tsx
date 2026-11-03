@@ -14,9 +14,9 @@ export const Route = createFileRoute("/")({
   validateSearch: (s: Record<string, unknown>): { guest?: string } => (typeof s["guest"] === "string" ? { guest: s["guest"] } : {}),
   head: () => ({
     meta: [
-      { title: "Basith CK & Hashima Sherin · Wedding Invitation · 21 November 2026" },
-      { name: "description", content: "With the blessings of Allah, you are cordially invited to the wedding of Basith CK & Hashima Sherin on 21 November 2026 at Planet Auditorium, Parapputhadam." },
-      { property: "og:title", content: "Basith CK & Hashima Sherin · Wedding Invitation" },
+      { title: "Basith CK & Hashima Sherin · Nikkah Invitation · 21 November 2026" },
+      { name: "description", content: "With the blessings of Allah, you are cordially invited to the nikkah of Basith CK & Hashima Sherin on 21 November 2026 at Planet Auditorium, Parapputhadam." },
+      { property: "og:title", content: "Basith CK & Hashima Sherin · Nikkah Invitation" },
       { property: "og:description", content: "You are cordially invited · 21 November 2026 · 11:00 AM · Planet Auditorium, Parapputhadam" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
