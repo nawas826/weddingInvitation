@@ -153,7 +153,7 @@ export function WeddingDate() {
   return (
     <SectionShell className="text-center">
       <Reveal>
-        <Eyebrow>Wedding celebration</Eyebrow>
+        <Eyebrow>Nikkah celebration</Eyebrow>
         <h2 className="mt-3 font-script text-6xl text-gold-foil sm:text-7xl">Save the Date</h2>
       </Reveal>
       <Reveal delay={0.15} className="mt-12 flex justify-center" style={{ perspective: 1000 }}>
@@ -198,7 +198,7 @@ export function VenueSection() {
       <Reveal delay={0.1}>
         <div className="arch-mask relative mx-auto max-w-2xl overflow-hidden border border-gold/60 p-2 shadow-deep">
           <div className="arch-mask relative overflow-hidden">
-            <img src={venueImg} alt="Illustration of an elegant wedding venue" width={1280} height={800} loading="lazy" className="aspect-[4/5] w-full object-cover sm:aspect-[16/11]" />
+            <img src={venueImg} alt="Illustration of an elegant nikkah venue" width={1280} height={800} loading="lazy" className="aspect-[4/5] w-full object-cover sm:aspect-[16/11]" />
             <div className="absolute inset-0 bg-gradient-to-t from-forest via-forest/50 to-transparent" />
             <div className="absolute inset-x-0 bottom-0 p-6 sm:p-10">
               <MapPin className="mx-auto h-6 w-6 text-gold" />
