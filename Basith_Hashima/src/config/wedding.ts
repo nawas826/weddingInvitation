@@ -26,12 +26,14 @@ export const wedding: WeddingConfig = {
     name: "Basith CK",
     relation: "Son of",
     parents: "Abdul Azeez & Bushra",
-    address: ["Valappil House", "Tirur, Malappuram"],
+    address: ["Cholakkundil House", "Tirur, Malappuram"],
   },
   bride: {
     name: "Hashima Sherin PK",
     relation: "Daughter of",
-    parents: "Shabeerali PK & Sainaba",
+    parents: "Shabeerali PK & Nusrath",
+    address: ["Puzhakkalakath House", "Pakkadapuraya, Malappuram"],
+
   },
   coupleShort: { groom: "Basith CK", bride: "Hashima Sherin" },
   dateISO: "2026-11-21T11:00:00+05:30",
