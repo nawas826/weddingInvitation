@@ -23,19 +23,19 @@ export interface WeddingConfig {
 
 export const wedding: WeddingConfig = {
   groom: {
-    name: "Basith CK",
+    name: "Basith",
     relation: "Son of",
-    parents: "Abdul Azeez & Bushra",
+    parents: "Abdul Azeez CK & Bushra",
     address: ["Cholakkundil House", "Tirur, Malappuram"],
   },
   bride: {
-    name: "Hashima Sherin PK",
+    name: "Hashima Sherin",
     relation: "Daughter of",
     parents: "Shabeerali PK & Nusrath",
     address: ["Puzhakkalakath House", "Pakkadapuraya, Malappuram"],
 
   },
-  coupleShort: { groom: "Basith CK", bride: "Hashima Sherin" },
+  coupleShort: { groom: "Basith", bride: "Hashima Sherin" },
   dateISO: "2026-11-21T11:00:00+05:30",
   timezone: "Asia/Kolkata",
   dateParts: {
