@@ -66,7 +66,7 @@ export function GoldButton({ children, className = "", ...rest }: React.ButtonHT
   return (
     <button
       {...rest}
-      className={`group relative inline-flex min-h-12 items-center justify-center gap-2 overflow-hidden rounded-full bg-gold-foil px-7 py-3 font-display text-xs font-semibold tracking-[0.2em] text-forest uppercase shadow-gold transition-transform duration-300 hover:scale-[1.03] active:scale-95 disabled:opacity-50 ${className}`}
+      className={`group relative inline-flex min-h-12 items-center justify-center gap-2 overflow-hidden rounded-full bg-gold-foil px-7 py-3 font-display text-xs font-semibold tracking-[0.2em] text-wine uppercase shadow-gold transition-transform duration-300 hover:scale-[1.03] active:scale-95 disabled:opacity-50 ${className}`}
     >
       <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-ivory/60 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
       <span className="relative flex items-center gap-2">{children}</span>

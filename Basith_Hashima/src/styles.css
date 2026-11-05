@@ -28,9 +28,9 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
-  --color-emerald: var(--emerald);
-  --color-emerald-deep: var(--emerald-deep);
-  --color-forest: var(--forest);
+  --color-burgundy: var(--burgundy);
+  --color-burgundy-deep: var(--burgundy-deep);
+  --color-wine: var(--wine);
   --color-gold: var(--gold);
   --color-gold-soft: var(--gold-soft);
   --color-ivory: var(--ivory);
@@ -44,29 +44,29 @@
 
 :root {
   --radius: 0.5rem;
-  --emerald: oklch(0.36 0.07 165);
-  --emerald-deep: oklch(0.25 0.05 165);
-  --forest: oklch(0.18 0.035 165);
+  --burgundy: oklch(0.40 0.09 260);
+  --burgundy-deep: oklch(0.29 0.07 262);
+  --wine: oklch(0.19 0.045 264);
   --gold: oklch(0.8 0.1 82);
   --gold-soft: oklch(0.88 0.06 85);
   --ivory: oklch(0.97 0.015 90);
   --cream: oklch(0.94 0.025 88);
   --beige: oklch(0.86 0.035 80);
 
-  --background: var(--forest);
+  --background: var(--wine);
   --foreground: var(--ivory);
-  --card: var(--emerald-deep);
+  --card: var(--burgundy-deep);
   --card-foreground: var(--ivory);
-  --popover: var(--emerald-deep);
+  --popover: var(--burgundy-deep);
   --popover-foreground: var(--ivory);
   --primary: var(--gold);
-  --primary-foreground: var(--forest);
-  --secondary: var(--emerald);
+  --primary-foreground: var(--wine);
+  --secondary: var(--burgundy);
   --secondary-foreground: var(--ivory);
-  --muted: var(--emerald-deep);
+  --muted: var(--burgundy-deep);
   --muted-foreground: oklch(0.85 0.03 90 / 0.75);
   --accent: var(--gold-soft);
-  --accent-foreground: var(--forest);
+  --accent-foreground: var(--wine);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: var(--ivory);
   --border: oklch(0.8 0.1 82 / 0.35);
@@ -74,16 +74,16 @@
   --ring: var(--gold);
 
   --gradient-gold: linear-gradient(120deg, oklch(0.68 0.11 70), oklch(0.92 0.07 90) 45%, oklch(0.72 0.11 75) 70%, oklch(0.9 0.06 88));
-  --gradient-velvet: radial-gradient(ellipse at 50% 35%, oklch(0.34 0.07 165), oklch(0.2 0.045 165) 60%, oklch(0.13 0.03 165));
+  --gradient-velvet: radial-gradient(ellipse at 50% 35%, oklch(0.30 0.075 260), oklch(0.20 0.05 262) 60%, oklch(0.12 0.035 265));
   --shadow-gold: 0 0 40px -8px oklch(0.8 0.1 82 / 0.45);
-  --shadow-deep: 0 40px 80px -20px oklch(0.05 0.02 165 / 0.8);
+  --shadow-deep: 0 40px 80px -20px oklch(0.05 0.02 262 / 0.8);
 }
 
 @layer base {
   * { border-color: var(--color-border); }
   html { scroll-behavior: smooth; }
   body {
-    background: var(--color-forest);
+    background: var(--color-wine);
     color: var(--color-foreground);
     font-family: var(--font-serif);
     overflow-x: hidden;

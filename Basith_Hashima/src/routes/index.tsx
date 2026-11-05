@@ -15,7 +15,7 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Basith CK & Hashima Sherin · Nikkah Invitation · 21 November 2026" },
-      { name: "description", content: "With the blessings of Allah, you are cordially invited to the nikkah of Basith CK & Hashima Sherin on 21 November 2026 at Planet Auditorium, Parapputhadam." },
+      { name: "description", content: "With the blessings of Allah, you are cordially invited to the Nikkah of Basith CK & Hashima Sherin on 21 November 2026 at Planet Auditorium, Parapputhadam." },
       { property: "og:title", content: "Basith CK & Hashima Sherin · Nikkah Invitation" },
       { property: "og:description", content: "You are cordially invited · 21 November 2026 · 11:00 AM · Planet Auditorium, Parapputhadam" },
       { property: "og:type", content: "website" },
@@ -40,7 +40,7 @@ function Invitation() {
   }, [opened]);
 
   return (
-    <main className="relative min-h-screen overflow-x-hidden bg-forest" data-scene-ready>
+    <main className="relative min-h-screen overflow-x-hidden bg-wine" data-scene-ready>
       {!lowPower && (
         <Suspense fallback={null}>
           <FloatingDecorations petals={opened} />

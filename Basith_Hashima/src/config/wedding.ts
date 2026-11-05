@@ -26,14 +26,12 @@ export const wedding: WeddingConfig = {
     name: "Basith",
     relation: "Son of",
     parents: "Abdul Azeez CK & Bushra",
-    address: ["Cholakkundil House", "Tirur, Malappuram"],
+    address: ["Valappil House", "Tirur, Malappuram"],
   },
   bride: {
     name: "Hashima Sherin",
     relation: "Daughter of",
-    parents: "Shabeerali PK & Nusrath",
-    address: ["Puzhakkalakath House", "Pakkadapuraya, Malappuram"],
-
+    parents: "Shabeerali PK & Sainaba",
   },
   coupleShort: { groom: "Basith", bride: "Hashima Sherin" },
   dateISO: "2026-11-21T11:00:00+05:30",
@@ -62,8 +60,8 @@ export function rsvpMessage(attending: boolean, guest?: string) {
   const c = wedding.coupleShort;
   const from = guest && guest !== wedding.defaultGuest ? ` This is ${guest}.` : "";
   return attending
-    ? `Assalamu Alaikum!${from} I am happy to confirm my attendance at the nikkah of ${c.groom} and ${c.bride} on ${wedding.dateParts.long} at ${wedding.dateParts.time}.`
-    : `Assalamu Alaikum!${from} Thank you for inviting me. Unfortunately, I won't be able to attend the nikkah of ${c.groom} and ${c.bride}. My heartfelt wishes and prayers are with the couple.`;
+    ? `Assalamu Alaikum!${from} I am happy to confirm my attendance at the Nikkah of ${c.groom} and ${c.bride} on ${wedding.dateParts.long} at ${wedding.dateParts.time}.`
+    : `Assalamu Alaikum!${from} Thank you for inviting me. Unfortunately, I won't be able to attend the Nikkah of ${c.groom} and ${c.bride}. My heartfelt wishes and prayers are with the couple.`;
 }
 
 export function whatsappLink(attending: boolean, guest?: string): string | null {
@@ -91,7 +89,7 @@ export function buildICS(): string {
   return [
     "BEGIN:VCALENDAR",
     "VERSION:2.0",
-    "PRODID:-//Basith Hashima Wedding//EN",
+    "PRODID:-//Basith Hashima Nikkah//EN",
     "BEGIN:VEVENT",
     `UID:basith-hashima-20261121@wedding`,
     `DTSTAMP:${f(new Date())}`,
