@@ -64,6 +64,7 @@ export function rsvpMessage(attending: boolean, guest?: string) {
     : `Assalamu Alaikum!${from} Thank you for inviting me. Unfortunately, I won't be able to attend the Nikkah of ${c.groom} and ${c.bride}. My heartfelt wishes and prayers are with the couple.`;
 }
 
+
 export function whatsappLink(attending: boolean, guest?: string): string | null {
   const n = wedding.whatsappNumber.replace(/\D/g, "");
   if (!n) return null;
