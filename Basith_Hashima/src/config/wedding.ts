@@ -21,6 +21,7 @@ export interface WeddingConfig {
   music: { src: string; volume: number };
 }
 
+
 export const wedding: WeddingConfig = {
   groom: {
     name: "Basith",
